@@ -1,0 +1,22 @@
+li{ list-style: none;}
+main > section{ height: calc(100vh - 100px)}
+/* 닫기로 노출되면 그 아래 네비게이션은 아래 스타일을 적용하라 */
+#gnb{ text-transform: uppercase;}
+.xi-close + ul{
+    display: flex !important;
+    /* 세로, 가로 내맘대로 레이아웃 -> float(가로레이아웃)를 삭제한다.*/
+    /* flex의 부차적인 스타일 */
+    flex-direction: column; /* 세로 정렬 */
+    justify-content: center; /* 세로가 justify 축이 된다.*/
+    align-items: center; /* 가로 정렬스타일*/
+
+    position: fixed;
+    /* 레이아웃의 기준 포지션이 순위 1등*/
+    left: 0; right: 0; /* 기준과 동시 너비 계산 공짜 width 100% */
+    top: 4rem; bottom: 0;
+    background-color: black;
+    line-height: 2;
+    
+}
+.xi-close + ul li{ width: 100%;}
+#gnb .xi-close + ul a{color: white !important}

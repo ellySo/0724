@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>화면노출_팀장</title>
+    <!--  사용자 개선을 위한 아이콘폰트사용 / 색상 크기 편집용이 -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 빠른 반응형 그리드시스템 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- 커스터마이징 / 커스터마이징 양을 줄이기 위해 최대한 부트스트랩을 써야 한다!! -->
+    <link rel="stylesheet" href="css/spa.css">
+    <!-- 자바스트립트 웹표준 제이쿼리 -->
+    <script 
+    src="https://code.jquery.com/jquery-2.2.4.min.js" 
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" 
+    crossorigin="anonymous"></script>
+    <!-- 네비게이션 -->
+    <script src="js/navi.js?jquery=2.2.4"></script>
+    <!-- 메인 페이지 -->
+    <script src="js/main.js?work=elly&s_datd=0724&u_date=0724"></script>
+</head>
+<body>
+    <header id="hd" closs="fixed-top">
+        <div class="container d-flex justify-content-between align-items-md-center
+                    text-center text-md-left">
+                    <h1>로고</h1>
+                    <!-- 버튼을 클릭하면 xi-close 줬다가 뺐다가 -->
+                    <button id="allBtn" class="xi-bars border-0 bg-transparent xi-2x d-md-none"><span class="sr-only">전체메뉴</span>
+                    </button>
+                    <ul id="gnb" class="d-none d-md-flex mb-0 pl-0">
+                        <li style="background: var(--warning);" class="p-3">
+                            <a href="#skill" style="color: var(--dark) !important">메뉴</a></li>
+                        <li clss="p-3"><a href="#portfolio">메뉴</a></li>
+                        <li clss="p-3"><a href="#interview">메뉴</a></li>
+                        <li clss="p-3"><a href="#sns">메뉴</a></li>
+                    </ul>
+                
+           
+        </div>
+    </header>
+    <main>
+        <section id="banner" class="border-bottom">
+
+        </section>
+        <section id="skill" class="title border-bottom text-md-center">
+            <h2>skills</h2>            
+        </section>
+        <section id="portfolio" class="title border-bottom text-md-center">
+            <h2>portfolio</h2>                        
+        </section>
+        <section id="interview" class="title border-bottom text-md-center">
+            <h2>interview</h2>                        
+        </section>
+        <section id="sns" class="title border-bottom text-md-center">
+            <h2>sns</h2>
+            
+        </section>
+    </main>
+    <footer id="ft" class="py-5 bg-dark text-white">
+        <p>카피라이트 넣기</p>
+    </footer>
+
+</body>
+</html>
